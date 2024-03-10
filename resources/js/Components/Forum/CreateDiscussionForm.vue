@@ -66,10 +66,10 @@ import Select from '../Select.vue';
 import useCreateDiscussion from '@/Composables/useCreateDiscussion';
 import Svg from '../Svg.vue';
 import { Mentionable } from 'vue-mention'
-// import useMentionSearch from '@/Composables/useMentionSearch'
+import useMentionSearch from '@/Composables/useMentionSearch'
 
 const { visible, hideCreateDiscussionForm, form } = useCreateDiscussion()
-// const { mentionSearch, mentionSearchResults } = useMentionSearch()
+const { mentionSearch, mentionSearchResults } = useMentionSearch()
 
 const createDiscussion = () => {
     form.post(route('discussions.store'), {

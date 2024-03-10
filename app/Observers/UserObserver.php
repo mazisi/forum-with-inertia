@@ -8,11 +8,11 @@ class UserObserver
 {
     public function created(User $user)
     {
-        //$user->mention->searchable();
+        $user->mention->searchable();
     }
 
     public function updated(User $user)
     {
-        //$user->mention->searchable();
+        $user->mention->searchable();
     }
 }

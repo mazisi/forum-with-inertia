@@ -40,11 +40,11 @@ import Textarea from '../Textarea.vue';
 import useCreatePost from '@/Composables/useCreatePost';
 import Svg from '../Svg.vue';
 import { Mentionable } from 'vue-mention'
-// import useMentionSearch from '@/Composables/useMentionSearch'
+import useMentionSearch from '@/Composables/useMentionSearch'
 import { watch } from 'vue'
 
 const { visible, hideCreatePostForm, form, discussion, user } = useCreatePost()
-// const { mentionSearch, mentionSearchResults } = useMentionSearch()
+const { mentionSearch, mentionSearchResults } = useMentionSearch()
 
 watch(user, (user) => {
     if (!user) {
